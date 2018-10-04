@@ -15,7 +15,8 @@
   <div id="allContainer">
     <div class="header-tabs">
       <button id="homeButton" class="headerButton">home</button>
-      <button id="aboutButton" class="headerButton">about</button>
+      <button id="aboutButton" class="headerButton">images</button>
+      <button id="thisPorscheButton" class="headerButton">about</button>
       <button id="historyButton" class="headerButton">history</button>
       <button id="contactButton" class="headerButton">contact</button>
     </div>
@@ -82,10 +83,10 @@
       </div>
     </div>
     <div class="transparentContainer" style="height: 100px;"></div>
-    <div class="infoContainer">
+    <div class="infoContainer" id="thisPorsche">
         <h2>1997 Porsche 993 Targa</h2>
         <p>
-          A unique car built to custom specification by the original and only owner. One of only 567 last air-cooled classic built for North America in midnight blue with European style all back interior except for full leather light gray seats - which feels like floating in the air.  With the full glassTarga roof, it feels like flying in a fighter jet! Custom wood finish on shifter and handbrake, 6 cassette CD changer. Original paint (light ding repairs only), new clutch and brakes with recent clean out of SAI and new engine gaskets, this car should trouble free for the next passionate owner. All maintenance records and original sale records, window sticker and marketing brochures and video.
+            A unique car built to custom specification by the original and only owner. One of only 567, this air-cooled car was classically built for North American specifications with midnight blue exterior and a European style all black interior except for the full leather light gray seats.  With the full glass Targa roof, it feels like flying in a fighter jet! This gem has a custom wood finish on the shifter and handbrake, a 6 cassette CD changer and original paint (light ding repairs only). The recent add ons include a new clutch, brakes with a recent clean out of SAI in Los Gatos, and new engine gaskets. This car should trouble free for the next passionate owner. The purchase of this car comes with the maintenance records, original sale records, window sticker and marketing brochures/videos. 
         </p>
     </div>
     <!-- Clayton added the history container -->
@@ -135,6 +136,13 @@
                 }, 1000);
             });
         });
+      $(document).ready(function (){
+          $("#thisPorscheButton").click(function (){
+              $('html, body').animate({
+                  scrollTop: $("#thisPorsche").offset().top - 120
+              }, 1000);
+          });
+      });
       $(document).ready(function (){
           $("#historyButton").click(function (){
               $('html, body').animate({
