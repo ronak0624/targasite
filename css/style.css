@@ -48,8 +48,12 @@ body {
   width: 100%
 }
 .header-tabs{
+  position: fixed;
+  top: 0px;
+  right: 0px;
   text-align: right;
   white-space: nowrap;
+  z-index: 5;
 }
 hr{
   height: 12px;
