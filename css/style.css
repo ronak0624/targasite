@@ -87,18 +87,26 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .imageContainer {
   position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-
+.infoContainer{
+  margin-left: 15%;
+  margin-right: 15%;
+  color: black;
+  background-color: #eee;
+  padding: 2em;
+  border-radius: .5em;
+  box-shadow: 8px 7px 23px 5px rgba(122,122,122,0.8);
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -115,19 +123,16 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -136,7 +141,6 @@ img {
   position: absolute;
   top: 0;
 }
-
 /* Container for image text */
 .caption-container {
   text-align: center;
@@ -144,24 +148,20 @@ img {
   padding: 2px 16px;
   color: white;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
