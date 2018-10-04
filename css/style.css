@@ -25,8 +25,8 @@ body {
   background-repeat: no-repeat;
 }
 .container{
-      filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
-    }
+  filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+}
 .header {
   height: 100vh;
   background-image:
