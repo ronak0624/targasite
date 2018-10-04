@@ -9,12 +9,32 @@
 
     <title>Classic Air Cooled Targa</title>
 </head>
+<style>
+.historyContainer{
+  background-color: #eee;
+}
+.contactContainer{
+  background-color: #eee;
+}
+.oneLine{
+}
+.messageInput{
+  font-size: 20px;
+}
+.transparentContainer{
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+}
+</style>
 <body>
+  <div id="allContainer">
+    <!-- <img src="img/background.jpg"> -->
     <header class="header">
       <div class="header-tabs">
         <a href="#about">about</a>
-        <a href="#">history</a>
-        <a href="#">contact</a>
+        <a href="#history">history</a>
+        <a href="#contact">contact</a>
       </div>
       <div style="background: none; color:#111;"class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Porsche 911 Targa</h1>
@@ -22,7 +42,6 @@
       </div>
     </header>
     <div class="about-container" id="about">
-
       <div id="gallery-carousel-exterior" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -45,7 +64,27 @@
         </a>
       </div>
     </div>
-    .
+    <!-- Clayton added the history container -->
+    <div class="transparentContainer"></div>
+    <div class="historyContainer" id="history">
+      <h3>Here is where all of the history of the car is going to go</h3>
+    </div>
+    <!-- Clayton added the contact container -->
+    <div class="transparentContainer"></div>
+    <div id="contact">
+      <form action="https://formspree.io/ronak0624@gmail.com"method="POST" class="contactContainer">
+        <div class="oneLine">
+            <input type="email" name="_replyto" placeholder="Your Email" class="messageInput">
+          </div>
+        <div class="oneLine">
+          <textarea class="messageInput" name="message" cols="50" rows="5" placeholder="Message the owner..."></textarea>
+        </div>
+        <div class="oneLine">
+          <input type="submit" name="sendButton" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
