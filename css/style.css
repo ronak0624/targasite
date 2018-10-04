@@ -1,8 +1,9 @@
 /*
 light: rgb(47, 99, 255);
 dark: rgb(4, 0, 195);
-midtone: rgb(0, 126, 189); */
-
+midtone: rgb(0, 126, 189); 
+midnight blue: #003366
+*/
 *{
   margin: 0;
   padding: 0;
@@ -12,7 +13,6 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  color: #777;
   background-image:
   linear-gradient(
     to right bottom,
@@ -25,11 +25,12 @@ body {
   background-repeat: no-repeat;
 }
 .container{
-      filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
-    }
+  filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+}
 .header {
   height: 100vh;
   position: relative;
+  margin-top: 10px;
 }
 .sticky{
   position: fixed;
@@ -43,14 +44,19 @@ body {
   right: 0px;
   top: 0px;
   z-index: 5;
+  color: white;
+  background-color: #003366;
+  width: 100%;
+  background-image: linear-gradient(to left bottom, #003366, #4f5b86);
 }
+
 hr{
   height: 12px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 .header-tabs a{
-  color: #111;
+  color: white;
   display: inline-block;
   padding: 1em 2em;
   text-decoration: none;
@@ -71,6 +77,10 @@ hr{
 }
 .messageInput{
   font-size: 20px;
+  width: 100%;
+  border-radius: 5px; 
+  margin-bottom: 5px;
+  box-shadow: 1px 1px 18px 5px rgba(122,122,122,0.8);
 }
 .transparentContainer{
   width: 100%;
